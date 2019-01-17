@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Drexel Smart House</title>
+  <title>Sight Unseen</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -75,44 +75,34 @@
             <div class="container-main single-main">
               <div class="col-md-12">
                 <div class="block-main mb-30">
-                  <img src="../images/portfolio-pages/drexelsmarthouse.jpg" class="img-fluid" alt="rendering of the Drexel Smart House">
+                  <img src="../images/portfolio/sight_unseen.jpg" class="img-fluid" alt="army of ultrasonic sensor wireless end nodes">
                   <div class="content-main single-post padDiv">
                     <div class="journal-txt">
-                      <h4><a href="#">PRESIDENT: DREXEL SMART HOUSE</a></h4>
+                      <h4><a href="#">SIGHT UNSEEN - DRAGONHACKS 2018</a></h4>
                     </div>
                     <div class="post-meta">
                       <ul class="list-unstyled mb-0">
-                        <li class="date">Dates Active:<a href="#">July 2017 - Present</a></li>
+                        <li class="date">Event Date:<a href="#">January 6th 2018</a></li>
+                        <li class="date">DevPost Form:<a href="https://devpost.com/software/site-unseen">Click Here</a></li>
                       </ul>
                     </div>
-                    <p class="mb-30">It is a long established fact that a reader will be distracted by the readable
-                      content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                      more-or-less normal distribution of letters, as opposed to
-                      using 'Content here, content here', making it look like readable English. Many desktop publishing
-                      packages and web page editors now use Lorem Ipsum as their default model text, and a search for
-                      'lorem ipsum' will uncover many web
-                      sites still in their infancy. Various versions have evolved over the years, sometimes by
-                      accident, sometimes on purpose (injected humour and the like).</p>
-                    <p class="mb-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                      Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-                      took a galley of type and scrambled it to make a type
-                      specimen book. It has survived not only five centuries, but also the leap into electronic
-                      typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                      Letraset sheets containing Lorem Ipsum passages,
-                      and more recently with desktop publishing software like Aldus PageMaker including versions of
-                      Lorem Ipsum.</p>
-                    <blockquote>If you are still looking for that one person who will change your life, take a look in
-                      the mirror.</blockquote>
-                    <p class="mb-30">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-                      a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                      McClintock, a Latin professor at Hampden-Sydney College in
-                      Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                      and going through the cites of the word in classical literature, discovered the undoubtable
-                      source. Lorem Ipsum comes from sections
-                      1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero,
-                      written in 45 BC. This book is a treatise on the theory of ethics, very popular during the
-                      Renaissance. The first line of Lorem Ipsum,
-                      "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    <p class="mb-30">A wireless localization system made to learn from a user's movements over time,
+                      map out rooms, and navigate the user without the need of eyesight.</p>
+                    <p class="mb-30">Once we formulated an idea, we created a concept map in order to structure our
+                      project timeline. We distributed the workload amidst our group into four main categories:
+                      hardware, networking, data analysis, and the web application.</p>
+                    <p class="mb-30">For hardware, we designed a low-latency sensor network using Arduino Uno's
+                      equipped with RFM69 radio frequency transceivers. Each transceiver acted as a wireless sensor
+                      node that transmitted ultrasonic distance data to a central gateway. We had a minimum of 4
+                      ultrasonic sensors in the room and 1 ultrasonic sensor on the person to retrieve localization
+                      data. On the person navigating the room, we also equipped an Arduino 101 with a built in
+                      gyroscopic sensor. The combination of data from every sensor component allowed us to infer
+                      positions through data fusion techniques.</p>
+                    <p class="mb-30"> The DragonBoard was used as the central brain of the network; handling everything
+                      from data collection to data processing and fusion. It also works as a gateway bridge between the
+                      sensor module hub and the front-end visualization. Once processed, the raw data from the sensors
+                      is converted to X and Y coordinates which were used by the computer to draw a map of the current
+                      room over time. This data was stored in MySQL for ease of querying.</p>
                   </div>
                 </div>
               </div>
