@@ -111,7 +111,7 @@ $(document).ready(function() {
     itemSelector: '.jinfo',
     percentPosition: true,
     masonry: {
-      columnWidth: '.grid-sizer'
+      //columnWidth: '.grid-sizer'
     }
   });
 
